@@ -1,0 +1,315 @@
+/*
+Theme Name: CIBD-ZM
+Theme URI: http://cibydesign.co.ukthemes/CIBD-ZM
+Author: Chima Ijeoma
+Author URI: http://cibydesign.co.uk
+Description: Bespoke theme for the Zita Menyhart Studios website.
+Version: 1.1
+*/
+
+/* =Structure
+----------------------------------------------- */
+
+/* Used to prevent that 'unsightly' page shift when the scrollbar vanishes on short content page */
+html {
+	overflow-y: scroll;
+	}
+
+body {
+	background: #fff;
+	font-family: "agencyfbregular", "Agency FB", Tahoma, Verdana;
+	color: #222;
+	}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd, input, form, fieldset, label, a:link, a:hover {padding: 0;margin: 0}
+
+h1, h2, h3 {
+	font-family: "Agency FB";
+}
+
+p {	margin: 0 0 1.7em 0; line-height: 1.3em
+	}
+
+ul, li, dl, dt, dd {list-style: none}
+
+a:link, a:visited { color: #3A3A3A; }
+a:hover { color: #3A3A3A; }
+img { border: none; }
+
+select, input, button, textarea {
+    font-family: inherit;
+}
+
+input, textarea, select {
+	color: #333;
+	font-family: inherit;	
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+/* ---------------------------------------------
+	
+	basic structure elements
+	
+--------------------------------------------- */
+#container {
+	width: 900px;
+	margin: 20px auto;
+	background-color: #FFF;
+}
+
+#content {
+	background: url(../images/bg-dacontent.gif) top left repeat-y;
+}
+
+/* ---------------------------------------------
+	
+	header
+	
+--------------------------------------------- */
+#header {
+	background-color: #347aa6;
+	height: 157px;
+	background: #347aa6 url(images/zita-menyhart-company-logo.jpg) top left repeat-y;
+}
+
+#header h1 {
+	color: #000;
+	padding: 100px 0px 10px 65px;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
+	font-size: 400%;
+}
+
+#header h1 a {
+	font-style: italic;
+	color: #000;
+	text-decoration: none;
+	padding: 4px;
+}
+
+
+/* ---------------------------------------------
+	
+	main column
+	
+--------------------------------------------- */
+#main {
+	margin-top: 5px;
+	letter-spacing: 1px;
+	width: 750px;
+	float: left;
+}
+
+#main-products {
+	margin-top: 5px;
+	letter-spacing: 1px;
+	width: 590px;
+	float: left;
+}
+
+#main-inner {
+	font-size: 161.6%;
+	text-align: justify;
+	padding: 5px 10px 10px 10px;
+}
+
+#main h2 {
+	color: #000;
+	font-size: 150%;
+	margin: 0 0 6px 0;
+}
+
+/* ---------------------------------------------
+	
+	side column
+	
+--------------------------------------------- */
+#side {
+	width: 150px;
+	float: left;
+}
+
+#side-inner {
+	padding: 5px;
+}
+
+#side-products {
+	width: 310px;
+	float: left;
+}
+
+
+.img-right {
+	float: right;
+	margin: 0 0 10px 10px;
+	border: 2px solid #94b0c0;
+}
+
+/* ---------------------------------------------
+	
+	(side) navigation
+	
+--------------------------------------------- */
+#nav, #menu-sidebar-menu {
+	background-color: #fff;
+	font-family: "Agency FB";
+}
+
+#nav ul li,
+#menu-sidebar-menu ul li {
+	display: block;
+}
+
+#nav ul li a,
+#menu-sidebar-menu ul li a {
+	display: block;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 5px;
+	font-size: 250%;
+}
+
+#nav ul li a:hover,
+#menu-sidebar-menu ul li a:hover {
+	color: #ff0000;
+}
+
+
+/* ---------------------------------------------
+	
+	footer
+	
+--------------------------------------------- */
+
+#footer {
+	clear: left;
+	color: #5b5b5b;
+	display: block;
+	padding: 20px 0;
+	border-top:1px solid #B3B3B3;
+	color:#CCCCCC;	
+	}
+	
+#footer a {
+	font-size: 146.5%;
+	text-decoration: none;
+	color: #CCCCCC;
+}
+#footer .alignright {
+	text-align: right;
+	padding-top:2px;
+	}
+	
+#footer .alignright a {
+	display:inline;
+	text-transform:uppercase;
+	height:40px;
+	line-height:10px;
+	padding-top:3px;
+	}
+	
+#footer .top {
+	padding-right:40px;
+	background:url(images/icons.gif) no-repeat 100% 0px;
+	margin-right: 10px;
+	}
+	
+#footer .rss {
+	padding-right:40px;
+	margin-right:10px;
+	background:url(images/icons.gif) no-repeat 100% -167px;
+	}
+	
+#footer .home {
+	padding-right:40px;
+	margin-right:20px;
+	background:url(images/icons.gif) no-repeat 100% -87px;
+}
+
+/* ---------------------------------------------
+	
+	controllers for news page
+	
+--------------------------------------------- */
+
+.news-item {
+	vertical-align: top;
+	display: inline-block;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #B3B3B3;
+}
+
+/* ---------------------------------------------
+	
+	images
+	
+--------------------------------------------- */
+
+	
+img.alignleft, .alignleft img {
+	margin-right:10px;
+	}
+	
+img.alignright, .alignright img {
+	margin-left:10px;
+	}
+
+.wp-caption, .attachment img {
+	text-align: center;
+}
+
+.wp-caption p.wp-caption-text {
+	color:#b6b6b6;
+	margin: 0;
+}
+
+.attachment, .caption {
+	text-align:center;
+}
+
+.attachment img {
+	}
+
+.thumbnail-container {
+	display: inline-block;
+	align: top;
+	min-width: 150px;
+}
+
+/* ---------------------------------------------
+	
+	misc.
+	
+--------------------------------------------- */
+
+.wpcf7-form-control.wpcf7-submit, .wpsc_checkout_forms input {
+	padding: 5px 20px 5px 20px;
+	background: #ffffff;
+	border: 1px solid #B3B3B3;
+}
+
+.wpsc_checkout_table tr td {
+	padding: 10px;
+}
+
+.clear {
+	clear: both;
+}
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+/* @end */

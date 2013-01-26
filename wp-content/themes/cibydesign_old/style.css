@@ -1,0 +1,656 @@
+/*
+Theme Name: ZitaMenyhart Studio
+Description: A minimalist theme with stark contrast and bold typography.
+Version: 1.0
+Author: Creative Internet By Design Ltd
+Author URI: http://www.cibydesign.co.uk/
+Tags: two-columns, sticky-post, fixed-width, black, white
+
+Colors: #000000 black
+        #CCCCCC grey
+        #871020 burgundy
+        #888888 light-grey
+		#343434;
+		#b6b6b6;
+		#ffffff; white
+*/	
+
+html {
+	text-align: justify;
+}
+
+/* Begin Structure */
+body {
+	background:#fff;
+	font-family: "Agency FB", "N Helvetica Narrow", Tahoma, Verdana;
+	font-style: normal;
+	text-align: justify;
+	text-transform: normal;
+	margin:0;
+	padding:0;
+	}
+	
+
+/* Begin Settings and Classes */
+
+a:link {
+	color:#000000;
+	text-decoration:none;
+	outline: 0;
+	}
+
+a:visited {
+	color:#000000;
+	text-decoration: underline;
+	}
+	
+a:hover {
+	color:#b6b6b6;
+	}
+	
+a:active {
+	color: #e40000;
+}
+
+p {
+	letter-spacing: auto;
+	text-align: justify;
+	margin-top: 10px;
+	}
+
+ul {
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+	}
+	
+h1 {
+	display: block;
+	font-weight: bold;
+	text-transform: uppercase;
+	}
+
+h2 {
+	font-weight: normal;
+	margin-top:30px;
+	margin-bottom:14px;
+	}
+
+h3 {
+	margin-top: 10px;
+}
+	
+h4, h5, h6 {
+	margin-top:30px;
+	}
+
+/* qTranslate Module */
+
+.qtrans_language_chooser {
+	color: black;
+	margin:0 auto;
+	width:890px;
+	text-align:right;
+ 	display: block;
+	padding: 5px 5px 0px 5px;
+	list-style-type:none;
+	}
+
+input, select, textarea, button {
+	border:1px solid #e6e6e6;
+	background:#f9f9f9;
+}
+
+.content-divider {
+	border-bottom: 1px solid #CCCCCC;
+}
+		
+pre {
+	font: 1.1em "Courier New", Courier, Fixed;
+	margin:1.5em;
+	padding:10px;
+	background:#fafafa;
+	border:1px solid #eee;
+	}
+	
+acronym, abbr {
+	font-size: 0.9em;
+	letter-spacing: .07em;
+	}
+	
+hr {
+	clear:both;
+	width:80%;
+	height:1px;
+	border:none 0;
+	color:#ccc;
+	background-color:#ccc;
+	margin:1.5em 0;
+	}
+	
+img {
+	border:none;
+	max-width:100%;
+	}
+	
+blockquote {
+	margin-left:-21px;
+	padding-left:21px;
+	background:url(images/quote.gif) no-repeat 0 6px;
+	color:#343434;
+	}
+.entry {
+	margin-top: 0px;
+}
+.entry cite {
+	font-style:italic;
+	display:block;
+	margin:5px 0 0;
+	text-align:right;
+	}
+
+.entry ul li {
+	line-height: 120%;
+}		
+
+.entry cite:before {
+	content: "\2014 \0020";
+	}
+		
+.post dt {
+	font-weight:bold;
+	background:url(images/icons.gif) no-repeat 0 -141px;
+	padding-left:10px;
+	margin-left:-10px;
+	}
+
+.post dd {
+	padding-left:10px;
+	padding-bottom:5px;
+	}
+		
+.clear { 
+	clear:both;
+	height:0;
+	line-height:0;
+	}
+		
+.alignleft {
+	float:left;
+	}
+	
+.alignright {
+	float:right;
+	}
+	
+.aligncenter, div.aligncenter, img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+
+/* Begin Images */	
+img.alignleft, .alignleft img {
+	margin-right:10px;
+	}
+	
+img.alignright, .alignright img {
+	margin-left:10px;
+	}
+
+.wp-caption, .attachment img {
+	text-align: center;
+}
+
+.wp-caption p.wp-caption-text {
+	color:#b6b6b6;
+	margin: 0;
+}
+
+.attachment, .caption {
+	text-align:center;
+}
+
+.attachment img {
+	}
+
+.wp-post-image {
+	float: left;
+	padding: 0 1em 1em 0;
+}
+
+/* End Images / End Settings and Classes */
+	
+#page {
+	margin:0 auto;
+	padding: 0;
+	width:900px;
+	text-align: justify;
+	}
+
+
+/* Begin Header */
+#header {
+`	border-bottom: 1px solid #000;
+	}
+	
+#sitename {
+	color: #2E2B2C;
+	font-size: 3.75em;
+	font-style: italic;
+	display: block;
+	background: url(images/zita_menyhart_company_logo_small.png) no-repeat top left;
+	margin-top: 0px; /* height of the replacement image */
+	margin-left: 25px;
+	padding-left: 55px;
+	height: 50px;
+	padding-top: 110px;
+	text-transform: uppercase;
+	z-index: 99;
+	letter-spacing: -1px;
+	font-family: "Agency FB"; 
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	}
+
+#sitename #divider {
+	display: block;
+	margin-top: -10px;
+	height: 1px;
+	border-bottom: 1px solid #000;
+}
+
+#sitename a {
+	margin-bottom: 1px;
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+
+#searchform {
+	width:200px;
+}
+
+#header #searchform {
+	float:right;
+	padding-top:15px;
+	}
+		
+#s {
+	width:167px;
+	border:1px solid #e6e6e6;
+	background:#f9f9f9;
+	padding:2px 3px 3px;
+	float:left;
+	}
+	
+#searchsubmit {
+	float:right;
+	}
+/* End Header */
+
+
+/* Begin Page List */		
+#nav {
+	line-height:20px;
+	float:left;
+	padding-top:15px;
+	width:360px;
+	}
+	
+/* End Page List */
+
+		
+/* Begin Content */	
+.content {
+	display: block;
+	min-height: 20em;
+	line-height: 1.5em;
+	float:right;
+	width:670px;
+	border-bottom: 1px solid #E6E6E6;
+	}
+
+/* Begin Content */	
+#page-content {
+	display: block;
+	line-height: 1.5em;
+	float:right;
+	width: 770px;
+	margin-top: 10px;
+	}
+
+#page-content h1 {
+	margin-top: 0px;
+}
+
+
+#page-content h2 {
+	margin-top: 0px;
+	font-size: 1.5em;
+}
+
+/* Begin Content */	
+#product-page-content {
+	display: block;
+	line-height: 1.5em;
+	float:right;
+	width: 770px;
+	margin-top: 0px;
+	}
+
+#product-page-content h1 {
+	margin-top: 0px;
+}
+
+
+#product-page-content h2 {
+	margin-top: 0px;
+}
+
+
+#home-page-content {
+	display: block;
+	line-height: 1.5em;
+	float:right;
+	width: 770px;
+	margin-top: 5px;
+	}
+
+.page-default-content {
+	line-height: 1.5em;
+	min-height: 10em;
+	margin-top: -10px;
+	padding-top: 0px;
+	margin-bottom: 20px;
+	float:right;
+	width:670px;
+	}
+
+.page-standard-content {
+	line-height: 1.5em;
+	min-height: 10em;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 20px;
+	float:right;
+	width:670px;
+	}
+
+div #products_page_container {
+	margin-top: 1em;
+}
+
+div .wpsc_description {
+	font-family: Tahoma, Arial, Verdana, Helvetica;
+	text-align: justify;
+	letter-spacing: -1px;
+}
+
+div .theme-two-cols {
+	margin-top: 1em;
+}
+
+#page-press-content {
+	line-height: 1.5em;
+	min-height: 10em;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #DDD;
+	float:right;
+	width:670px;
+	}
+
+span .single-post-content {
+	display: block;
+	text-align: justify;
+}
+
+.post {
+	margin-bottom:40px;
+	}
+	
+.sticky, .byuser {
+	border:5px solid #f9f9f9 !important;
+	margin:-10px -10px 40px -50px;
+	background:url(images/sticky.gif) no-repeat 597px 5px;
+	padding:5px 5px 5px 45px;
+	}
+		
+.navigation {
+	border-top: 1px solid #eeeeee;
+	padding:9px 0;
+	}
+	
+.attachment .navigation {
+	height:150px;
+	}
+		
+.navigation .alignleft a {
+	background:url(images/icons.gif) no-repeat 0 -60px;
+	padding-left:22px;
+	display:block;
+	height:10px;
+	float:left;
+	}
+		
+.navigation .alignright a {
+	background:url(images/icons.gif) no-repeat 100% -22px;
+	padding-right: 22px;
+	display: block;
+	float: right;
+	}
+
+/* Begin Sidebar */
+.sidebar {
+	float: left;
+	font-family: "Agency FB"; 
+	font-style: bold;
+	font-size: 2em;
+	text-transform: uppercase;
+	width: 100px;
+	display: block;
+	margin-top: 10px;	
+	margin-left: 1em;
+	list-style-type: none;
+	min-height: 500px;
+}
+
+#sidebar-home {
+	width: 100px;
+}
+
+.sidebar li {
+	margin-left: 0px;
+	list-style-type: none;
+	display: block;
+	line-height: 1.2em;	
+}
+		
+.sidebar ul li a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+	color: #e40000;
+}
+
+.sidebar .sub-menu {
+	margin-top: 20px;
+	margin-left: 20px;
+	-moz-transform: rotate(-270deg);
+	-o-transform: rotate(-270deg);
+	-webkit-transform: rotate(-270deg);
+	-moz-transform-origin: 100px 1.25em;
+	-webkit-transform-origin: 100px 1.25em;
+    writing-mode: tb-rl;
+    text-transform: uppercase;
+	}
+
+.sidebar .sub-menu li {
+	line-height: 1em;
+	}
+
+.sidebar .sub-menu a:link {
+	outline: 0;
+	text-decoration: none;
+}
+
+.sidebar .sub-menu a:hover {
+	text-decoration: none;
+}
+
+.sidebar .sub-menu a:active {
+	text-decoration: none;
+	color: #e40000;
+}
+		
+/* End Sidebar */
+
+
+/* Begin Footer */
+#footer {
+	display: block;
+	padding-top:24px;
+	border-top:1px solid #e6e6e6;
+	color:#CCCCCC;	
+	}
+	
+#footer a {
+	color: #CCCCCC;
+}
+#footer .alignright {
+	padding-top:2px;
+	}
+	
+#footer .alignright a {
+	display:block;
+	float:right;
+	text-transform:uppercase;
+	height:10px;
+	line-height:10px;
+	padding-top:3px;
+	}
+	
+#footer .top {
+	padding-right:15px;
+	background:url(images/icons.gif) no-repeat 100% 0;
+	}
+	
+#footer .rss {
+	padding-right:18px;
+	margin-right:10px;
+	background:url(images/icons.gif) no-repeat 100% -90px;
+	}
+	
+#footer .home {
+	padding-right:18px;
+	margin-right:10px;
+	background:url(images/icons.gif) no-repeat 100% -120px;
+	}
+/* End Footer / End Structure */
+
+/* E-commerce store styling */
+
+.wpsc_category_boundary {
+	display: none;
+}
+.wpsc_select_variation, #wpsc_quantity_update {
+	background: #F9F9F9;
+	color: black;
+	font-size: 12px;
+	font-family: Tahoma, Arial, Verdana, Helvetica;
+}
+
+.wpsc_buy_button_container {
+	margin-top: 1em;
+}
+
+.wpsc_buy_button, .remove_button, .make_purchase {
+	padding: 5px;
+	font-size: 12px;
+	font-family: Tahoma, Arial, Verdana, Helvetica;
+	background: #888888;
+	color: white;
+	text-transform: uppercase;
+}
+.prodtitles {
+	margin-top: 0px;
+}
+
+.adjustform INPUT {
+	font-size: 12px;
+	font-family: Tahoma, Arial, Verdana, Helvetica;
+	text-transform: uppercase;
+}
+
+.TB_Thumbnail_Image {
+	border-color: red;
+}
+
+.shopping-cart-wrapper {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.shopping-cart-wrapper h4 {
+	display: inline-block;
+}
+
+.shopping-cart-wrapper p {
+	text-align: right;
+	line-height: 1em;
+}
+
+.wpcart_gallery {
+	width: 100%;
+	display: block;
+}
+
+.wpcart_gallery a {
+	width: 90px;
+	margin-right: 8px;
+	display: inline-block;
+}
+
+.attachment-single-post-thumbnail {
+	margin-right: 1em;
+	float: left;
+	border: 1px solid #F9F9F9;
+	padding: 5px;
+}
+
+
+.single-post-content p {
+	padding-top: 0px;
+}
+
+/* File attachments */
+a.pdf_attachment {
+	margin-left: 55px;
+	background-url:('./images/pdf-attachment.jpeg');
+}
+
+/* Specific red button for the tables */
+#product_12_submit_button {
+	background-color: #800517;
+}
+
+
+.producttext p {
+	background: #fff;
+	font-size: 1em;
+	font-family: "Agency FB", "N Helvetica Narrow", Tahoma, Verdana;
+	font-style: normal;
+	text-align: justify;
+	text-transform: normal;
+	letter-spacing: 1px;
+	margin:0;
+	padding: 0.5em 0;
+	}
+	
+div .product_grid_display {
+	padding-top: 0px;
+}
+
